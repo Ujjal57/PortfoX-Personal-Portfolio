@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet" />
+  <title>Ujjal Kumar Dey | Portfolio</title>
+  <style>
+    body, h1, h2, h3, h4, h5, h6, p, span, a, li, ul, ol, summary, details, button, div {
+      font-family: "Times New Roman", Times, serif !important;
+    }
+    .download-cv {
+      margin-top: 0.1rem;
+      display: inline-block;
+      padding: 0.5rem 0.8rem;
+      font-size: 0.9rem;
+      background-color: #0056b3;
+      color: white;
+      text-decoration: none;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .download-cv:hover {
+      background-color: #007BFF;
+      transform: scale(1.05);
+    }
+
+    /* Timeline CSS */
+    .timeline-container {
+      position: relative;
+      width: 100%;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px 0;
+    }
+
+    .timeline-container::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background-color: #5e5df0;
+      transform: translateX(-50%);
+    }
+
+    .timeline-item {
+      position: relative;
+      margin: 40px 0;
+    }
+
+    .timeline-symbol {
+      position: absolute;
+      left: 50%;
+      top: 0;
+      transform: translate(-50%, -50%);
+      font-size: 20px;
+      background-color: #fff;
+      z-index: 3;
+      padding: 4px;
+      border-radius: 50%;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .timeline-content {
+      position: relative;
+      width: 42%;
+      padding: 15px 20px;
+      background: #fff;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .timeline-content.left {
+      left: 0;
+      text-align: left;
+    }
+
+    .timeline-content.right {
+      left: 58%;
+      text-align: left;
+    }
+
+    .timeline-content h3 {
+      margin: 0 0 5px;
+      font-size: 17px;
+      font-weight: bold;
+      color: #222;
+    }
+
+    .timeline-date {
+      font-size: 0.85rem;
+      color: #777;
+    }
+
+    .timeline-details summary {
+      cursor: pointer;
+      font-weight: 600;
+      color: #5e5df0;
+      margin: 6px 0;
+    }
+
+    .timeline-details ul {
+      margin: 4px 0 0;
+      padding-left: 20px;
+      list-style-type: disc;
+    }
+
+    @media screen and (max-width: 768px) {
+      .timeline-container::before {
+        left: 20px;
+      }
+
+      .timeline-content {
+        width: calc(100% - 40px);
+        left: 40px !important;
+      }
+
+      .timeline-symbol {
+        left: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!--===== HEADER =====-->
+  <header class="l-header">
+  <nav class="nav bd-grid" style="display: flex; align-items: center; justify-content: space-between;">
+    <div class="nav__left" style="display: flex; align-items: center; gap: 8rem;">
+      <a href="#" class="nav__logo">
+        <span class="logo" style="display: inline-flex; justify-content: center; align-items: center; width: 50px; height: 50px; border-radius: 50%; background-color: #3964da; color: white; font-weight: bold; font-size: 1.2rem;">UKD</span>
+      </a>
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list" style="display: flex; gap: 1rem; list-style: none; margin: 0; padding: 0;">
+          <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+          <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+          <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+          <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <!-- Resume Button (View instead of Download) -->
+    <a href=
+   target="_blank" 
+   class="button download-cv">Resume</a>
+
+
+  </nav>
+</header>
+
+
+  <!--===== MAIN CONTENT =====-->
+  <main class="l-main">
+
+    <!--===== HOME =====-->
+    <section class="home bd-grid" id="home" style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap;">
+      <div class="home__data" style="flex: 2; min-width: 300px;">
+        <h1 class="home__title">
+          Hi,<br />I'm <span class="home__title-color">Ujjal Kumar Dey</span><br />
+          Computer Science &<br />Engineering Student
+        </h1>
+        <a href="#contact" class="button" style="margin-top: 1rem;">Contact</a>
+      </div>
+
+      <div class="home__img" style="flex: 1; display: flex; justify-content: center; align-items: center; min-width: 300px; margin-top: -5rem;">
+        <img src="assets/img/ujjal.jpg" alt="Ujjal Kumar Dey" style="width: 500px; height: 350px; object-fit: cover; border-radius: 50%; box-shadow: 0 9px 150px rgba(0,0,0,0.1);" />
+      </div>
+    </section>
+
+    <!--===== ABOUT =====-->
+    <section class="about section" id="about">
+  <h2 class="section-title">About</h2>
+  <div class="about__container bd-grid" style="display: flex; justify-content: center;">
+    <div class="skills__data" style="padding: 2rem; background-color: #fff; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); max-width: 700px; width: 100%; display: flex; flex-direction: column; gap: 0.8rem; align-items: flex-start;">
+      
+      <h2 class="about__subtitle" style="margin-bottom: 0;">I'm Ujjal Kumar Dey</h2>
+      
+      
+<div class="about__text">
+</div>
+
+
+
+
+
+          <!--===== Education Timeline Section (Refined) =====-->
+          <h3 class="about__subtitle" style="margin-bottom: 0.5rem;">🎓 Education</h3>
+
+<section class="timeline-section section" style="width: 100%; display: flex; justify-content: center; margin-top: 0;">
+  <div class="timeline-container">
+
+    <div class="timeline-item">
+      <div class="timeline-symbol">🎓</div>
+      <div class="timeline-content left">
+        
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-symbol">📘</div>
+      <div class="timeline-content right">
+        
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-symbol">🧠</div>
+      <div class="timeline-content left">
+        
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+          <!--===== Languages =====-->
+          <div>
+            <h3 class="about__subtitle">🌐 Languages Known</h3>
+            <ul class="about__text">
+              <li><strong>Fluent:</strong> English, Hindi.</li>
+              <li><strong>Spoken:</strong> Kannada, Bengali, Odia.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+
+
+
+<!--===== SKILLS =====-->
+<section class="skills section" id="skills">
+  <h2 class="section-title">Skills</h2>
+
+  <div class="skills__container bd-grid">
+    <!-- Left Column: Technical Skills -->
+    <div>
+      <h2 class="skills__subtitle"><center>Programming</center></h2>
+
+      <div class="skills__data">
+        <div class="skills__names">
+          <i class='bx bx-code-alt skills__icon'></i>
+          <span class="skills__name"> Python</span>
+        </div>
+      </div>
+
+      <div class="skills__data">
+        <div class="skills__names">
+          <i class='bx bx-data skills__icon'></i>
+          <span class="skills__name">SQL</span>
+        </div>
+      </div>
+
+      <div class="skills__data">
+        <div class="skills__names">
+          <i class='bx bxl-html5 skills__icon'></i>
+          <span class="skills__name">HTML</span>
+        </div>
+      </div>
+
+      <div class="skills__data">
+        <div class="skills__names">
+          <i class='bx bxl-css3 skills__icon'></i>
+          <span class="skills__name">CSS</span>
+        </div>
+      </div>
+
+      <div class="skills__data">
+        <div class="skills__names">
+          <i class='bx bxl-javascript skills__icon'></i>
+          <span class="skills__name">JavaScript</span>
+        </div>
+      </div>
+
+      <h2 class="skills__subtitle"><center>Practices & Frameworks</center></h2>
+
+      <div class="skills__data">
+        <div class="skills__names">
+          <i class='bx bx-transfer-alt skills__icon'></i>
+          <span class="skills__name">REST APIs</span>
+        </div>
+      </div>
+
+      <div class="skills__data">
+        <div class="skills__names">
+          <i class='bx bx-revision skills__icon'></i>
+          <span class="skills__name">CRUD Operations</span>
+        </div>
+      </div>
+
+      <div class="skills__data">
+        <div class="skills__names">
+          <i class='bx bx-mobile-alt skills__icon'></i>
+          <span class="skills__name">Responsive Design</span>
+        </div>
+      </div>
+
+      <div class="skills__data">
+        <div class="skills__names">
+          <i class='bx bx-layout skills__icon'></i>
+          <span class="skills__name">Agile Development</span>
+        </div>
+      </div>
+
+      <div class="skills__data">
+        <div class="skills__names">
+          <i class='bx bx-git-branch skills__icon'></i>
+          <span class="skills__name">Git Version Control</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Column: Tools & Soft Skills -->
+    
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<!--===== PROJECTS =====-->
+<!--===== PROJECTS =====-->
+<style>
+
+
+  .project-button:hover {
+    background-color: #005ec0;
+  }
+
+  .section-title {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+  }
+
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100vw;
+  height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding-top: 0;
+    overflow: auto;
+  }
+
+  .modal-content {
+    background: white;
+     margin: auto;
+    max-width: 850px;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+    text-align: left;
+    max-height: 100vh;
+    overflow-y: auto;
+  }
+
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    background-color: rgb(245, 0, 0);
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+
+  .close-btn:hover {
+    background-color: darkred;
+  }
+
+  .modal-slideshow {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .modal-slide {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: none;
+  }
+
+  .modal-slide.active {
+    display: block;
+  }
+
+  
+</style>
+
+<script>
+  // Function to show the first slide in each slideshow when projects section is in view
+  document.addEventListener("DOMContentLoaded", function () {
+    const projectSection = document.getElementById("projects");
+
+    
+          // Unobserve after triggering once
+          observer.unobserve(projectSection);
+        }
+      });
+    }, { threshold: 0.4 }); // Trigger when 40% of the section is visible
+
+    if (projectSection) {
+      observer.observe(projectSection);
+    }
+  });
+</script>
+
+
+<section class="projects section" id="projects">
+  <h2 class="section-title">Projects</h2>
+
+  <div class="work__container">
+    <!-- Project 1 -->
+
+    
+
+    
+
+    <!-- Project 3 -->
+    
+  </div>
+</section>
+
+<!-- Modal Structure -->
+<!-- Modal Structure -->
+   <!-- Modal -->
+<div id="projectModal" class="modal">
+ 
+
+    <div class="modal-nav">
+      <button class="nav-button" onclick="prevSlide()">Prev</button>
+      <button class="nav-button" onclick="nextSlide()">Next</button>
+    </div>
+
+    <p id="modalDescription"></p>
+  </div>
+</div>
+
+
+
+
+<!-- JavaScript -->
+  <script>
+ 
+  let currentSlide = 0;
+  let slides = [];
+
+  const projectInfoData = [
+  
+
+  
+    {
+  title: "Cine X Movie Recommendation System",
+  description: `Project Type: Machine Learning + Web App\nTools Used: Python, Jupyter Notebook, TMDB API, Pandas, Scikit-Learn, Flask\nDataset: Movies Metadata Dataset (Kaggle)\n\n📌 Project Overview:\nCine X is a personalized movie recommendation system that suggests similar movies based on user-selected titles. The system leverages content-based filtering using movie metadata such as genres, overview, cast, and crew.\n\n📥 Dataset Info:\n• Source: Kaggle – "The Movies Dataset"\n• Preprocessed using Jupyter Notebook\n• Cleaned missing values, standardized genres, extracted relevant features like keywords and cast\n\n🧹 Data Cleaning & Preprocessing:\n• Removed duplicates and nulls from the dataset\n• Processed and converted genre and keyword columns to lists\n• Applied TF-IDF vectorization on the movie overview\n• Calculated cosine similarity for recommendations\n\n⚙️ Technical Highlights:\n• Python backend (Jupyter Notebook & Flask)\n• Integrated with TMDB API to fetch posters and trailers\n• Responsive web frontend using HTML/CSS and Bootstrap\n• Returns 1 to 10 movie recommendations based on user preference\n\n🚫 Deployment Status:\n• Project is currently not deployed online\n• Can be run locally using Flask for backend and HTML for frontend\n\n🎯 Impact:\n• Helps users discover new movies based on content similarity\n• Clean and functional UI for showcasing Data Science + Web Integration skills\n• Great example of real-world ML + API + deployment-ready project`,
+  images: [
+    "assets/img/Cine X/intro.png",
+    "assets/img/Cine X/homepage.png",
+    "assets/img/Cine X/info.png"
+  ]
+}
+
+
+
+
+  ];
+
+  function openModal(index) {
+    modal.style.display = "block";
+    
+
+    slides = modalSlideshow.querySelectorAll(".modal-slide");
+    currentSlide = 0;
+  }
+
+  function closeModal() {
+    modal.style.display = "none";
+  }
+
+  function nextSlide() {
+    if (slides.length === 0) return;
+    slides[currentSlide].classList.remove("active");
+    currentSlide = (currentSlide + 1) % slides.length;
+    slides[currentSlide].classList.add("active");
+  }
+
+  
+</script>
+
+
+
+
+
+<!-- ✅ Slideshow Script -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const allProjects = document.querySelectorAll(".slideshow-container");
+
+    
+    });
+  });
+</script>
+
+
+
+
+
+
+<!--===== CONTACT =====-->
+<section class="contact section" id="contact">
+  <h2 class="section-title">Contact</h2>
+
+  <div class="contact__container bd-grid" style="display: flex; justify-content: center;">
+    <div class="skills__data" style="
+      padding: 2rem;
+      background-color: #fff;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      max-width: 500px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+      align-items: flex-start;">
+
+      <!-- Name -->
+      <div class="skills__names" style="display: flex; align-items: center; gap: 0.75rem;">
+        <i class='bx bx-user skills__icon'></i>
+        <span class="skills__name">Ujjal Kumar Dey</span>
+      </div>
+
+      <!-- Email -->
+      <div class="skills__names" style="display: flex; align-items: center; gap: 0.75rem;">
+        <i class='bx bx-envelope skills__icon'></i>
+        <a href="mailto:ujjalkumardeydey77@gmail.com" class="skills__name" style="text-decoration: none; color: inherit;">
+          ujjalkumardeydey77@gmail.com
+        </a>
+      </div>
+
+      <!-- Phone -->
+      <div class="skills__names" style="display: flex; align-items: center; gap: 0.75rem;">
+        <i class='bx bx-phone-call skills__icon'></i>
+        <a href="tel:+919019786930" class="skills__name" style="text-decoration: none; color: inherit;">
+          +91-9019786930
+        </a>
+      </div>
+
+      <!-- LinkedIn -->
+      <div class="skills__names" style="display: flex; align-items: center; gap: 0.75rem;">
+        <i class='bx bxl-linkedin skills__icon'></i>
+        <a href="https://www.linkedin.com/in/ujjal-kumar-dey-1691652a5?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="skills__name" style="text-decoration: none; color: inherit;">
+          Ujjal Kumar Dey
+        </a>
+      </div>
+
+      <!-- GitHub -->
+      <div class="skills__names" style="display: flex; align-items: center; gap: 0.75rem;">
+        <i class='bx bxl-github skills__icon'></i>
+        <a href="https://github.com/Ujjal57" target="_blank" class="skills__name" style="text-decoration: none; color: inherit;">
+          Ujjal57
+        </a>
+      </div>
+
+      <!-- Location -->
+      <div class="skills__names" style="display: flex; align-items: center; gap: 0.75rem;">
+        <i class='bx bx-map skills__icon'></i>
+        <span class="skills__name">Bangalore, Karnataka, India</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  </main>
+
+  <!--===== FOOTER =====-->
+  <footer class="footer">
+    <p class="footer__title">Ujjal Kumar Dey</p>
+
+    <div class="footer__social">
+      <a href="https://github.com/Ujjal57" target="_blank" class="footer__icon" aria-label="GitHub"><i class='bx bxl-github'></i></a>
+      <a href="https://www.linkedin.com/in/ujjal-kumar-dey-1691652a5?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="footer__icon" aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+      <a href="https://www.instagram.com/_ujjal.5_?igsh=eWtyNWdiYWN4azRm" target="_blank" class="footer__icon" aria-label="Instagram"><i class='bx bxl-instagram'></i></a>
+      <a href="https://www.facebook.com/ujjalkumar.dey.984?rdid=s37Z5PbKz5ml3rtD&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F16mCbfS7eT%2F#" target="_blank" class="footer__icon" aria-label="Facebook"><i class='bx bxl-facebook'></i></a>
+    </div>
+
+    <p class="footer__copy">&#169; 2025 Ujjal Kumar Dey. All rights reserved.</p>
+  </footer>
+
+  <!--===== SCRIPTS =====-->
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>
