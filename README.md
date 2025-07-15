@@ -32,8 +32,8 @@ A modern, responsive, and interactive personal portfolio to showcase your **skil
 
 ## 🖼️ Screenshots
 <p align="center">
-  <em>Intro Animation</em><br>
-  <img src="images/intro.png" alt="Intro Animation" width="700"/>
+  <em>Homepage</em><br>
+  <img src="home.png" alt="Intro Animation" width="700"/>
 </p>
 
 <p align="center">
