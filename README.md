@@ -32,28 +32,28 @@ A modern, responsive, and interactive personal portfolio to showcase your **skil
 
 ## 🖼️ Screenshots
 <p align="center">
-  <em>Homepage</em><br>
+  <em>Home Page</em><br>
   <img src="home.png" alt="Intro Animation" width="700"/>
 </p>
 
 <p align="center">
-  <em>Home Page</em><br>
-  <img src="images/home.png" alt="Home Page" width="700"/>
+  <em>About Page</em><br>
+  <img src="about.png" alt="Home Page" width="700"/>
 </p>
 
 <p align="center">
-  <em>Register Page</em><br>
-  <img src="images/reg.png" alt="Register Page" width="700"/>
+  <em>Skills Page</em><br>
+  <img src="skill.png" alt="Register Page" width="700"/>
 </p>
 
 <p align="center">
-  <em>Cart Page</em><br>
-  <img src="images/order.png" alt="Cart Page" width="700"/>
+  <em>Project Page</em><br>
+  <img src="project.png" alt="Cart Page" width="700"/>
 </p>
 
 <p align="center">
-  <em>Admin Dashboard</em><br>
-  <img src="images/admin.png" alt="Admin Dashboard" width="700"/>
+  <em>Contact Page</em><br>
+  <img src="contact.png" alt="Admin Dashboard" width="700"/>
 </p>
 
 ## 📂 Folder Structure
