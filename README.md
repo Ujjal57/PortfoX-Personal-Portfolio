@@ -2,6 +2,7 @@
 
 A modern, responsive, and interactive personal portfolio to showcase your **skills**, **projects**, **education**, and **contact information** in an elegant and professional layout.
 
+> ⚠️ **Note:** This repository contains only the **code structure** of the portfolio website (HTML/CSS/JS), not the complete backend or all assets. Customize it by adding your own content, images, and scripts as needed.
 
 ## 📌 Project Overview
 
