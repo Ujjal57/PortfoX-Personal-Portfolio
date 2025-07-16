@@ -7,28 +7,72 @@ A modern, responsive, and interactive personal portfolio to showcase your **skil
 
 **PortfoX** is a web-based developer portfolio designed to present your technical and personal profile in a visually engaging way. This project reflects strong frontend development, UI/UX practices, and structured content presentation, ideal for showcasing during placements and job interviews.
 
+## 🚀 Features
 
-## 🛠️ Tech Stack
+- 🎨 Clean & Responsive Design (Desktop + Mobile)
+- 🧑 About Section with Timeline Education
+- 🛠 Skills Section – Programming, Web & Development Tools, Practices & Frameworks, Soft Skills
+- 🎬 Projects Section with Image Slideshow & Modals
+- 📩 Contact Information with Email, Phone, Socials
+- 📄 Resume Button with Google Drive Link
+- 🔄 Animated Modals and Project Viewers
+- 🧠 Fully customizable content and easy to expand
 
-| Frontend       | Tools / Features                 |
-|----------------|----------------------------------|
-| HTML5          | Structure of the website         |
-| CSS3           | Styling and responsiveness       |
-| JavaScript     | Interactivity and animations     |
-| Boxicons       | Icons used across sections       |
-| ScrollReveal   | Smooth on-scroll animations      |
-| Git & GitHub   | Version Control and Hosting      |
+---
+## 📂 Folder Structure
 
+```bash
+PortfoX-Personal-Portfolio/
+├── .vscode
+├── assets/
+│   ├── css/
+│   │   └── styles.css
+│   ├── img/
+│   │   └── Cine X
+│   │   └── portfolio
+│   │   └── Shop Nix
+│   └── js/
+│       └── main.js
+├── index.html
+├── README.md
+```
 
-## 🎯 Key Features
+## 📚 How to Use / Run
 
-- 📌 **Sectioned Layout**: Includes Home, About, Skills, Projects, and Contact
-- 🎓 **Vertical Timeline**: Displays education with animated layout
-- 🎨 **Projects Showcase**: Projects with image slideshows, modals, and GitHub links
-- 📜 **Resume Button**: View hosted resume via Google Drive
-- 📧 **Contact Section**: With email, phone, GitHub, LinkedIn, and location
-- 📱 **Fully Responsive**: Works on mobile, tablet, and desktop screens
-- 💡 **Clean Typography**: Uses Times New Roman for a classic professional touch
+### ▶️ Live Preview (Manual)
+
+1. **Download** the project folder **or** clone it using the command below:
+
+   ```bash
+   git clone https://github.com/Ujjal57/PortfoX-Personal-Portfolio.git
+   ```
+
+2. **Navigate** to the project folder and open the `index.html` file using any modern web browser:
+
+   - Google Chrome  
+   - Mozilla Firefox  
+   - Microsoft Edge  
+   - Brave  
+
+3. **Explore** the different sections:
+
+   - Home  
+   - About  
+   - Skills  
+   - Projects  
+   - Contact  
+
+4. **Customize** the content:
+
+   - Edit `index.html` for text & structure  
+   - Edit `assets/css/styles.css` for styling  
+   - Edit `assets/js/main.js` for scroll animations  
+
+5. ✅ **(Optional) Host on GitHub Pages**:
+
+   - Push the repository to GitHub  
+   - Go to **Settings > Pages**, select the branch as `main` and folder as `/root`  
+   - Share your live portfolio link!  
 
 ## 🖼️ Screenshots
 <p align="center">
@@ -56,23 +100,12 @@ A modern, responsive, and interactive personal portfolio to showcase your **skil
   <img src="contact.png" alt="Admin Dashboard" width="700"/>
 </p>
 
-## 📂 Folder Structure
+## 🛠 Tech Stack
 
-```bash
-PortfoX-Personal-Portfolio/
-├── .vscode
-├── assets/
-│   ├── css/
-│   │   └── styles.css
-│   ├── img/
-│   │   └── Cine X
-│   │   └── portfolio
-│   │   └── Shop Nix
-│   └── js/
-│       └── main.js
-├── index.html
-├── README.md
-```
+- **Frontend**: HTML5, CSS3, JavaScript  
+- **Icons**: [Boxicons CDN](https://boxicons.com/)  
+- **Animations**: [ScrollReveal.js](https://scrollrevealjs.org/)  
+- **Fonts**: Times New Roman (Customized) 
 
 ## 👨‍💻 Developer
 
